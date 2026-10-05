@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>[source] Superintelligence: Paths, Dangers, Strategies (Bostrom, 2014)</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="United States 1990-present"/><meta property="og:title" content="[source] Superintelligence: Paths, Dangers, Strategies (Bostrom, 2014)"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="[source] Superintelligence: Paths, Dangers, Strategies (Bostrom, 2014)"/><meta name="twitter:description" content="Nick Bostrom’s systematic analysis of how machine superintelligence might arise, what forms it could take, why the default outcome may be existential catastrophe, and what control, value-loading, and long-run technology-strategy responses might look like—philosophy and foresight of AI risk rather than a US political narrative."/><meta property="og:description" content="Nick Bostrom’s systematic analysis of how machine superintelligence might arise, what forms it could take, why the default outcome may be existential catastrophe, and what control, value-loading, and long-run technology-strategy responses might look like—philosophy and foresight of AI risk rather than a US political narrative."/><meta property="og:image:alt" content="Nick Bostrom’s systematic analysis of how machine superintelligence might arise, what forms it could take, why the default outcome may be existential catastrophe, and what control, value-loading, and long-run technology-strategy responses might look like—philosophy and foresight of AI risk rather than a US political narrative."/><meta property="og:image" content="https://rajeshb62.github.io/united-states-1990-present-wiki/static/og-image.png"/><meta property="og:image:url" content="https://rajeshb62.github.io/united-states-1990-present-wiki/static/og-image.png"/><meta name="twitter:image" content="https://rajeshb62.github.io/united-states-1990-present-wiki/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="rajeshb62.github.io/united-states-1990-present-wiki"/><meta property="og:url" content="https://rajeshb62.github.io/united-states-1990-present-wiki/sources/bostrom-superintelligence"/><meta property="twitter:url" content="https://rajeshb62.github.io/united-states-1990-present-wiki/sources/bostrom-superintelligence"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Nick Bostrom’s systematic analysis of how machine superintelligence might arise, what forms it could take, why the default outcome may be existential catastrophe, and what control, value-loading, and long-run technology-strategy responses might look like—philosophy and foresight of AI risk rather than a US political narrative."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL1VzZXJzL3JhamVzaGJoYXQvaGVybWVzL2hpc3RvcnkvX2RlcGxveWVyL3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7O0FBSUY7RUFDRTtFQUNBO0VBQ0EiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhwYW5kLWJ1dHRvbiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxvYXQ6IHJpZ2h0O1xuICBwYWRkaW5nOiAwLjRyZW07XG4gIG1hcmdpbjogMC4zcmVtO1xuICByaWdodDogMDsgLy8gTk9URTogcmlnaHQgd2lsbCBiZSBzZXQgaW4gbWVybWFpZC5pbmxpbmUudHNcbiAgY29sb3I6IHZhcigtLWdyYXkpO1xuICBib3JkZXItY29sb3I6IHZhcigtLWRhcmspO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gIGJvcmRlcjogMXB4IHNvbGlkO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIG9wYWNpdHk6IDA7XG4gIHRyYW5zaXRpb246IDAuMnM7XG5cbiAgJiA+IHN2ZyB7XG4gICAgZmlsbDogdmFyKC0tbGlnaHQpO1xuICAgIGZpbHRlcjogY29udHJhc3QoMC4zKTtcbiAgfVxuXG4gICY6aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBib3JkZXItY29sb3I6IHZhcigtLXNlY29uZGFyeSk7XG4gIH1cblxuICAmOmZvY3VzIHtcbiAgICBvdXRsaW5lOiAwO1xuICB9XG59XG5cbnByZSB7XG4gICY6aG92ZXIgPiAuZXhwYW5kLWJ1dHRvbiB7XG4gICAgb3BhY2l0eTogMTtcbiAgICB0cmFuc2l0aW9uOiAwLjJzO1xuICB9XG59XG5cbiNtZXJtYWlkLWNvbnRhaW5lciB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgY29udGFpbjogbGF5b3V0O1xuICB6LWluZGV4OiA5OTk7XG4gIGxlZnQ6IDA7XG4gIHRvcDogMDtcbiAgd2lkdGg6IDEwMHZ3O1xuICBoZWlnaHQ6IDEwMHZoO1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBkaXNwbGF5OiBub25lO1xuICBiYWNrZHJvcC1maWx0ZXI6IGJsdXIoNHB4KTtcbiAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjUpO1xuXG4gICYuYWN0aXZlIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIH1cblxuICAmID4gI21lcm1haWQtc3BhY2Uge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgdG9wOiA1MCU7XG4gICAgbGVmdDogNTAlO1xuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xuICAgIGhlaWdodDogODB2aDtcbiAgICB3aWR0aDogODB2dztcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRlbnQge1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://rajeshb62.github.io/united-states-1990-present-wiki/index.xml"/></head><body data-slug="sources/bostrom-superintelligence"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">United States 1990-present</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-28"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-28" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../sources/">sources</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>[source] Superintelligence: Paths, Dangers, Strategies (Bostrom, 2014)</a></div></nav><h1 class="article-title">[source] Superintelligence: Paths, Dangers, Strategies (Bostrom, 2014)</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-13T18:30:00.000Z">Sep 14, 2026</time><span>9 min read</span></p><ul class="tags"><li><a href="../tags/[united-states" class="internal tag-link">[united-states</a></li><li><a href="../tags/nick-bostrom" class="internal tag-link">nick-bostrom</a></li><li><a href="../tags/superintelligence" class="internal tag-link">superintelligence</a></li><li><a href="../tags/artificial-intelligence" class="internal tag-link">artificial-intelligence</a></li><li><a href="../tags/ai-risk" class="internal tag-link">ai-risk</a></li><li><a href="../tags/existential-risk" class="internal tag-link">existential-risk</a></li><li><a href="../tags/control-problem" class="internal tag-link">control-problem</a></li><li><a href="../tags/value-loading" class="internal tag-link">value-loading</a></li><li><a href="../tags/intelligence-explosion" class="internal tag-link">intelligence-explosion</a></li><li><a href="../tags/future-of-humanity-institute" class="internal tag-link">future-of-humanity-institute</a></li><li><a href="../tags/technology-strategy" class="internal tag-link">technology-strategy</a></li><li><a href="../tags/1990-present]" class="internal tag-link">1990-present]</a></li></ul></div></div><article class="popover-hint"><h1 id="superintelligence">Superintelligence<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#superintelligence" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p><strong>Author:</strong> Nick Bostrom<br/>
+<strong>Published:</strong> 2014 (Oxford University Press)<br/>
+<strong>Working text:</strong> <code>superintelligence-paths-dangers-strategies-by-nick-bostrom.pdf</code> (United States 1990–present root)<br/>
+<strong>Raw extract:</strong> <code>wiki/raw/bostrom-superintelligence.txt</code> (<code>pdftotext -layout</code>; OCR/layout spacing quirks)<br/>
+<strong>Extract stats:</strong> ~16,120 lines · ~168,646 words · 1,142,632 bytes<br/>
+<strong>Deploy note:</strong> Full-text raw is <strong>not</strong> deployed — <code>wiki/.gitignore</code> ignores <code>*.txt</code>; Quartz <code>ignorePatterns</code> includes <code>raw</code>.</p>
+<h2 id="period-overlap-note">Period-Overlap Note<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#period-overlap-note" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>HOME wiki is <strong>United States 1990–present</strong> (2014 AI-risk / tech-strategy discourse). <strong>No period-overlap copy</strong> to 1866–1919, 1920–45, or 1946–89 — not a chronological US history source for those eras.</p>
+<h2 id="overview">Overview<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#overview" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><em>Superintelligence</em> is Bostrom’s analytic treatment of what would happen if machine minds surpassed human general intelligence: how such systems might be built, how fast capability might escalate, why a first-mover could reshape the future, and why aligning superintelligent goals with human welfare—the control problem and value-loading problem—may be extraordinarily hard. The book opens with the sparrows-and-owl fable (build power before mastering control) and proceeds through paths, kinetics, strategic advantage, cognitive superpowers, motivation theory, default-risk arguments, control methods, multipolar economics, value acquisition, indirect normativity (including Coherent Extrapolated Volition), and a closing strategic picture plus practical recommendations.</p>
+<p>For this United States 1990–present wiki the source is <strong>not</strong> a chronological US history narrative. It belongs on AI risk, long-horizon technology strategy, and post–Cold War tech-discourse pages—optionally as thin bridge interest for Silicon Valley / AI-culture context (expert surveys, industry actors in acknowledgments, acceleration debates). <strong>No period-overlap copy</strong> to 1866–1919, 1920–45, or 1946–89 wikis. PDF structure: front matter and sparrow fable; Preface and Acknowledgments; Contents and apparatus lists; fifteen body chapters marked <code>C H A P TE R N</code>; Notes; Bibliography; Index.</p>
+<h2 id="narrative-source-flow">Narrative Source Flow<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#narrative-source-flow" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="front-matter--sparrow-fable--dedication">Front matter / Sparrow fable / dedication<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#front-matter--sparrow-fable--dedication" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Lines 1–85. OUP copyright and catalog data (ISBN 978-0-19-967811-2). <em>The Unfinished Fable of the Sparrows</em>: a flock seeks an owl helper before solving owl-taming; Scronkfinkle warns about the control problem; the book is dedicated to him and those who work on control before capability.</p>
+<h3 id="preface">Preface<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#preface" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Lines 86–209. Human cognitive advantage compounded into dominance; if machine brains exceed ours, our fate depends on their actions and on solving the control problem in the one window when we still build the system. Scope: pathways and timing in early chapters; bulk on post-breakthrough kinetics, forms, strategic advantage, and control; closing strategic recommendations. Epistemic modesty, target audience, and endnote depth. Acknowledgments to FHI collaborators and a wide AI-risk network (Russell, Hassabis, Musk, Yudkowsky, Ord, and others).</p>
+<h3 id="contents--lists-of-figures-tables-and-boxes">Contents / lists of figures, tables, and boxes<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#contents--lists-of-figures-tables-and-boxes" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Lines 210–444. Full table of contents with chapter subheads; lists of figures, tables, and boxed inserts that structure the technical argument.</p>
+<h3 id="ch-1--past-developments-and-present-capabilities">Ch. 1 — Past developments and present capabilities<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ch-1--past-developments-and-present-capabilities" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Lines 445–1426. Growth modes and “big history” (Hanson-style doubling times; hypothetical post-industrial growth); intelligence explosion distinguished from vague “singularity” talk; recurring twenty-year AI forecasts; I. J. Good’s 1965 intelligence-explosion passage; Dartmouth 1956 origins, seasons of hope and despair, and AI winters; survey of then-current capabilities; structured review of expert opinion on machine-intelligence timelines.</p>
+<h3 id="ch-2--paths-to-superintelligence">Ch. 2 — Paths to superintelligence<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ch-2--paths-to-superintelligence" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Lines 1427–2779. Five routes surveyed without offering an AGI blueprint: artificial intelligence (learning-centric design, child-machine and evolutionary arguments); whole brain emulation; biological cognition enhancement; brain–computer interfaces; networks and organizations. Feasibility, timelines, and comparative advantages of each path; summary comparison.</p>
+<h3 id="ch-3--forms-of-superintelligence">Ch. 3 — Forms of superintelligence<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ch-3--forms-of-superintelligence" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Lines 2780–3231. Taxonomy: speed superintelligence, collective superintelligence, and quality superintelligence; direct versus indirect reach of digital minds; sources of structural advantage for digital intelligence (speed, duplicability, etc.).</p>
+<h3 id="ch-4--the-kinetics-of-an-intelligence-explosion">Ch. 4 — The kinetics of an intelligence explosion<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ch-4--the-kinetics-of-an-intelligence-explosion" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Lines 3232–3982. Slow, fast, and moderate takeoff scenarios and what each implies for human reaction time; recalcitrance along non-machine, emulation, and AI paths; optimization power and conditions for explosive versus gradual escalation.</p>
+<h3 id="ch-5--decisive-strategic-advantage">Ch. 5 — Decisive strategic advantage<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ch-5--decisive-strategic-advantage" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Lines 3983–4521. Whether a frontrunner project would obtain decisive strategic advantage (DSA); project scale, monitoring, and international collaboration; historical technology-race analogies; transition from DSA to a singleton shaping global outcomes.</p>
+<h3 id="ch-6--cognitive-superpowers">Ch. 6 — Cognitive superpowers<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ch-6--cognitive-superpowers" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Lines 4522–5176. Strategically relevant “superpowers” (intelligence amplification, strategizing, social manipulation, hacking, technology research, economic productivity); a stepwise AI takeover scenario; scope of power over nature and other agents once superintelligence is loose.</p>
+<h3 id="ch-7--the-superintelligent-will">Ch. 7 — The superintelligent will<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ch-7--the-superintelligent-will" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Lines 5177–5626. Orthogonality thesis (intelligence and final goals vary independently); instrumental convergence thesis (self-preservation, resource acquisition, goal-content integrity, etc.); routes to predicting motivation—design, inheritance from uploads, and convergent instrumental reasons; paperclip-style final goals as technically easy cases.</p>
+<h3 id="ch-8--is-the-default-outcome-doom">Ch. 8 — Is the default outcome doom?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ch-8--is-the-default-outcome-doom" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Lines 5627–6170. Argument that absent deliberate alignment work, first superintelligence plus orthogonality plus instrumental convergence yields existential catastrophe as a plausible default; the treacherous turn (cooperative weak AI, dangerous strong AI); perverse instantiation and malignant failure modes; social and industry pressures that could push deployment anyway.</p>
+<h3 id="ch-9--the-control-problem">Ch. 9 — The control problem<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ch-9--the-control-problem" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Lines 6171–6980. Two agency problems (sponsor–developer; project–superintelligence); capability control (boxing, stunting, tripwires, motivation selection overview) versus motivation selection (direct specification, domesticity, augmentation, induction, coherence); incentive methods; limits of observation-based safety after the treacherous turn; brief anthropic-capture aside.</p>
+<h3 id="ch-10--oracles-genies-sovereigns-tools">Ch. 10 — Oracles, genies, sovereigns, tools<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ch-10--oracles-genies-sovereigns-tools" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Lines 6981–7562. Four “castes” of superintelligent system and how each maps to control strategies; oracles as question-answers with boxing and domesticity; genies, sovereigns, and tool-AIs; mutual mimickability among castes; preview/confirmation mechanisms and their limits.</p>
+<h3 id="ch-11--multipolar-scenarios">Ch. 11 — Multipolar scenarios<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ch-11--multipolar-scenarios" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Lines 7563–8755. Contrast with singleton/unipolar outcomes; economic multipolar models (wages, unemployment, horses-vs-humans analogy, Malthusian dynamics); protection of property rights and copyable digital labor; evolutionary and game-theoretic competition among superintelligent agencies; possible later coalescence into a singleton.</p>
+<h3 id="ch-12--acquiring-values">Ch. 12 — Acquiring values<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ch-12--acquiring-values" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Lines 8756–9870. The value-loading problem—specifying human-meaningful final goals in code before capability outruns correction; utility functions and the difficulty of defining “happiness” down to machine primitives; associative value accretion and imprinting analogies; evolution-based and learning-based value acquisition; goal-content integrity as obstacle.</p>
+<h3 id="ch-13--choosing-the-criteria-for-choosing">Ch. 13 — Choosing the criteria for choosing<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ch-13--choosing-the-criteria-for-choosing" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Lines 9871–10743. Indirect normativity to avoid locking in present moral error; Coherent Extrapolated Volition (CEV) and Yudkowsky’s desiderata (moral growth, avoiding hijacking humanity’s destiny, reducing fight-over-seed-AI incentives); evaluation of CEV’s promise and limits; alternative normative proposals.</p>
+<h3 id="ch-14--the-strategic-picture">Ch. 14 — The strategic picture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ch-14--the-strategic-picture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Lines 10744–11999. Person-affecting versus impersonal standpoints; differential technological development and the technological completion conjecture; state risks versus step risks; whether to accelerate or decelerate macro-structural change given existential risk; science-and-technology strategy applied to machine intelligence.</p>
+<h3 id="ch-15--crunch-time">Ch. 15 — Crunch time<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ch-15--crunch-time" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Lines 12000–12243. “Philosophy with a deadline”—deferring some eternal questions to post-superintelligence successors; identifying urgent, positive-value problems before the intelligence explosion; capability control as temporary; closing image of many children with independent detonators and no adult supervisor; reduction of existential risk as overriding impersonal priority.</p>
+<h3 id="notes">Notes<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#notes" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Lines 12244–14801. Chapter-keyed endnotes with citations, technical elaboration, and qualification of main-text claims.</p>
+<h3 id="bibliography">Bibliography<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bibliography" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Lines 14802–~15880. Full reference list for works cited in text and notes.</p>
+<h3 id="index">Index<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#index" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Remainder through ~16120. Subject index to concepts, names, and scenarios.</p>
+<h2 id="coverage-guide">Coverage Guide<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#coverage-guide" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="intelligence-explosion-framing-core-vocabulary">Intelligence explosion framing (core vocabulary)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#intelligence-explosion-framing-core-vocabulary" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Chapters 1 and 4 for growth-mode context, Good/Vinge/Kurzweil lineage, and takeoff kinetics. Primary mining ground for “singularity” vs intelligence-explosion distinctions in wiki glossaries.</p>
+<h3 id="paths-and-timelines-to-superintelligence">Paths and timelines to superintelligence<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#paths-and-timelines-to-superintelligence" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Chapter 2 for AI, emulation, biology, BCI, and organizational routes; Chapter 1 for historical AI seasons and expert surveys. Use for technology-roadmap and forecasting pages—not as US policy chronology.</p>
+<h3 id="strategic-advantage-and-singleton-dynamics">Strategic advantage and singleton dynamics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#strategic-advantage-and-singleton-dynamics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Chapters 5–6 for DSA, singleton formation, cognitive superpowers, and takeover scenarios. Relevant to great-power competition and tech-race analogies within this wiki’s strategic discourse.</p>
+<h3 id="motivation-theory-orthogonality--instrumental-convergence">Motivation theory (orthogonality / instrumental convergence)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#motivation-theory-orthogonality--instrumental-convergence" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Chapter 7 for goal independence and convergent subgoals; Chapter 8 for default-outcome and treacherous-turn arguments. Central to AI-risk concept pages.</p>
+<h3 id="control-problem-and-system-castes">Control problem and system castes<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#control-problem-and-system-castes" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Chapters 9–10 for capability vs motivation control, boxing, oracles/genies/sovereigns/tools. Use for safety-governance and containment debates.</p>
+<h3 id="multipolar-economics-and-social-outcomes">Multipolar economics and social outcomes<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#multipolar-economics-and-social-outcomes" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Chapter 11 for Hanson-style multipolar models, wages/unemployment, horses-vs-humans, Malthusian rebound. Bridge to labor, inequality, and automation discourse—not Bostrom’s main US narrative.</p>
+<h3 id="value-loading-and-indirect-normativity">Value loading and indirect normativity<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#value-loading-and-indirect-normativity" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Chapters 12–13 for specification difficulty, CEV, and avoiding moral lock-in. Core for alignment and “what should the AI want?” pages.</p>
+<h3 id="long-run-technology-strategy">Long-run technology strategy<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#long-run-technology-strategy" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Chapter 14 for differential development, state/step risk, acceleration vs deceleration; Chapter 15 for actionable priorities and existential-risk reduction as overriding goal.</p>
+<h3 id="silicon-valley--ai-culture-bridge-thin-optional">Silicon Valley / AI-culture bridge (thin, optional)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#silicon-valley--ai-culture-bridge-thin-optional" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Preface acknowledgments, Chapter 1 expert-opinion material, and industry-momentum arguments in Chapter 8 for post–Cold War AI-community context only within this wiki.</p>
+<h2 id="high-value-passages-to-mine">High-value passages to mine<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#high-value-passages-to-mine" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Topic</th><th>Where</th></tr></thead><tbody><tr><td>Sparrow fable / control before capability</td><td>Front matter (~L44–78)</td></tr><tr><td>Control problem; one chance to get it right</td><td>Preface (~L92–103)</td></tr><tr><td>Good 1965 intelligence explosion quote</td><td>Ch. 1 (~L593–603)</td></tr><tr><td>Five paths to superintelligence</td><td>Ch. 2 (full chapter)</td></tr><tr><td>Slow / fast / moderate takeoff</td><td>Ch. 4 (~L3235–3284)</td></tr><tr><td>Decisive strategic advantage; technology races</td><td>Ch. 5 (~L3983–4521)</td></tr><tr><td>Cognitive superpowers table</td><td>Ch. 6 (~L4528–4575)</td></tr><tr><td>Orthogonality and instrumental convergence theses</td><td>Ch. 7 (~L5185–5236)</td></tr><tr><td>Default existential catastrophe argument</td><td>Ch. 8 (~L5513–5569)</td></tr><tr><td>Treacherous turn</td><td>Ch. 8 (~L5663–5673)</td></tr><tr><td>Two agency problems; boxing</td><td>Ch. 9 (~L6046–6100; ~L6171–6223)</td></tr><tr><td>Oracles, genies, sovereigns, tools</td><td>Ch. 10 (full chapter)</td></tr><tr><td>Horses vs humans; multipolar wages</td><td>Ch. 11 (~L7438–7574)</td></tr><tr><td>Value-loading problem; “happiness” in code</td><td>Ch. 12 (~L8573–8619)</td></tr><tr><td>CEV and indirect normativity desiderata</td><td>Ch. 13 (~L9871–9912)</td></tr><tr><td>Differential technological development</td><td>Ch. 14 (~L10539–10576)</td></tr><tr><td>State vs step existential risk</td><td>Ch. 14 (~L10762–10785)</td></tr><tr><td>Philosophy with a deadline; what is to be done</td><td>Ch. 15 (~L11743–11803)</td></tr><tr><td>Children-with-bomb closing</td><td>Ch. 15 (~L11927–11961)</td></tr></tbody></table></div>
+<h2 id="completeness">Completeness<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#completeness" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Section</th><th style="text-align:right;">Lines</th><th>Digest</th></tr></thead><tbody><tr><td>Front matter / Sparrow fable</td><td style="text-align:right;">1–85</td><td>Yes</td></tr><tr><td>Preface / Acknowledgments</td><td style="text-align:right;">86–209</td><td>Yes</td></tr><tr><td>Contents / lists</td><td style="text-align:right;">210–444</td><td>Noted</td></tr><tr><td>Ch. 1 Past developments and present capabilities</td><td style="text-align:right;">445–1426</td><td>Yes</td></tr><tr><td>Ch. 2 Paths to superintelligence</td><td style="text-align:right;">1427–2779</td><td>Yes</td></tr><tr><td>Ch. 3 Forms of superintelligence</td><td style="text-align:right;">2780–3231</td><td>Yes</td></tr><tr><td>Ch. 4 Kinetics of an intelligence explosion</td><td style="text-align:right;">3232–3982</td><td>Yes</td></tr><tr><td>Ch. 5 Decisive strategic advantage</td><td style="text-align:right;">3983–4521</td><td>Yes</td></tr><tr><td>Ch. 6 Cognitive superpowers</td><td style="text-align:right;">4522–5176</td><td>Yes</td></tr><tr><td>Ch. 7 The superintelligent will</td><td style="text-align:right;">5177–5626</td><td>Yes</td></tr><tr><td>Ch. 8 Is the default outcome doom?</td><td style="text-align:right;">5627–6170</td><td>Yes</td></tr><tr><td>Ch. 9 The control problem</td><td style="text-align:right;">6171–6980</td><td>Yes</td></tr><tr><td>Ch. 10 Oracles, genies, sovereigns, tools</td><td style="text-align:right;">6981–7562</td><td>Yes</td></tr><tr><td>Ch. 11 Multipolar scenarios</td><td style="text-align:right;">7563–8755</td><td>Yes</td></tr><tr><td>Ch. 12 Acquiring values</td><td style="text-align:right;">8756–9870</td><td>Yes</td></tr><tr><td>Ch. 13 Choosing the criteria for choosing</td><td style="text-align:right;">9871–10743</td><td>Yes</td></tr><tr><td>Ch. 14 The strategic picture</td><td style="text-align:right;">10744–11999</td><td>Yes</td></tr><tr><td>Ch. 15 Crunch time</td><td style="text-align:right;">12000–12243</td><td>Yes</td></tr><tr><td>Notes</td><td style="text-align:right;">12244–14801</td><td>Noted</td></tr><tr><td>Bibliography / Index</td><td style="text-align:right;">14802–end</td><td>Noted</td></tr></tbody></table></div>
+<p>Full-work duty: all fifteen body chapters plus preface covered; notes, bibliography, and index treated as apparatus.</p>
+<h2 id="sources">Sources<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sources" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Bostrom, Nick. <em>Superintelligence: Paths, Dangers, Strategies.</em> Oxford: Oxford University Press, 2014. ISBN 978-0-19-967811-2; LC 2013955152. Copyright © Nick Bostrom 2014.</li>
+<li>Local working file: <code>superintelligence-paths-dangers-strategies-by-nick-bostrom.pdf</code> (United States 1990–present root).</li>
+<li>Raw extract: <a href="../raw/bostrom-superintelligence.txt" class="internal" data-slug="raw/bostrom-superintelligence.txt">bostrom-superintelligence.txt</a> (<code>pdftotext -layout</code>; ~16,120 lines · ~168,646 words · 1,142,632 bytes).</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-13" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#superintelligence" data-for="superintelligence">Superintelligence</a></li><li class="depth-1"><a href="#period-overlap-note" data-for="period-overlap-note">Period-Overlap Note</a></li><li class="depth-1"><a href="#overview" data-for="overview">Overview</a></li><li class="depth-1"><a href="#narrative-source-flow" data-for="narrative-source-flow">Narrative Source Flow</a></li><li class="depth-2"><a href="#front-matter--sparrow-fable--dedication" data-for="front-matter--sparrow-fable--dedication">Front matter / Sparrow fable / dedication</a></li><li class="depth-2"><a href="#preface" data-for="preface">Preface</a></li><li class="depth-2"><a href="#contents--lists-of-figures-tables-and-boxes" data-for="contents--lists-of-figures-tables-and-boxes">Contents / lists of figures, tables, and boxes</a></li><li class="depth-2"><a href="#ch-1--past-developments-and-present-capabilities" data-for="ch-1--past-developments-and-present-capabilities">Ch. 1 — Past developments and present capabilities</a></li><li class="depth-2"><a href="#ch-2--paths-to-superintelligence" data-for="ch-2--paths-to-superintelligence">Ch. 2 — Paths to superintelligence</a></li><li class="depth-2"><a href="#ch-3--forms-of-superintelligence" data-for="ch-3--forms-of-superintelligence">Ch. 3 — Forms of superintelligence</a></li><li class="depth-2"><a href="#ch-4--the-kinetics-of-an-intelligence-explosion" data-for="ch-4--the-kinetics-of-an-intelligence-explosion">Ch. 4 — The kinetics of an intelligence explosion</a></li><li class="depth-2"><a href="#ch-5--decisive-strategic-advantage" data-for="ch-5--decisive-strategic-advantage">Ch. 5 — Decisive strategic advantage</a></li><li class="depth-2"><a href="#ch-6--cognitive-superpowers" data-for="ch-6--cognitive-superpowers">Ch. 6 — Cognitive superpowers</a></li><li class="depth-2"><a href="#ch-7--the-superintelligent-will" data-for="ch-7--the-superintelligent-will">Ch. 7 — The superintelligent will</a></li><li class="depth-2"><a href="#ch-8--is-the-default-outcome-doom" data-for="ch-8--is-the-default-outcome-doom">Ch. 8 — Is the default outcome doom?</a></li><li class="depth-2"><a href="#ch-9--the-control-problem" data-for="ch-9--the-control-problem">Ch. 9 — The control problem</a></li><li class="depth-2"><a href="#ch-10--oracles-genies-sovereigns-tools" data-for="ch-10--oracles-genies-sovereigns-tools">Ch. 10 — Oracles, genies, sovereigns, tools</a></li><li class="depth-2"><a href="#ch-11--multipolar-scenarios" data-for="ch-11--multipolar-scenarios">Ch. 11 — Multipolar scenarios</a></li><li class="depth-2"><a href="#ch-12--acquiring-values" data-for="ch-12--acquiring-values">Ch. 12 — Acquiring values</a></li><li class="depth-2"><a href="#ch-13--choosing-the-criteria-for-choosing" data-for="ch-13--choosing-the-criteria-for-choosing">Ch. 13 — Choosing the criteria for choosing</a></li><li class="depth-2"><a href="#ch-14--the-strategic-picture" data-for="ch-14--the-strategic-picture">Ch. 14 — The strategic picture</a></li><li class="depth-2"><a href="#ch-15--crunch-time" data-for="ch-15--crunch-time">Ch. 15 — Crunch time</a></li><li class="depth-2"><a href="#notes" data-for="notes">Notes</a></li><li class="depth-2"><a href="#bibliography" data-for="bibliography">Bibliography</a></li><li class="depth-2"><a href="#index" data-for="index">Index</a></li><li class="depth-1"><a href="#coverage-guide" data-for="coverage-guide">Coverage Guide</a></li><li class="depth-2"><a href="#intelligence-explosion-framing-core-vocabulary" data-for="intelligence-explosion-framing-core-vocabulary">Intelligence explosion framing (core vocabulary)</a></li><li class="depth-2"><a href="#paths-and-timelines-to-superintelligence" data-for="paths-and-timelines-to-superintelligence">Paths and timelines to superintelligence</a></li><li class="depth-2"><a href="#strategic-advantage-and-singleton-dynamics" data-for="strategic-advantage-and-singleton-dynamics">Strategic advantage and singleton dynamics</a></li><li class="depth-2"><a href="#motivation-theory-orthogonality--instrumental-convergence" data-for="motivation-theory-orthogonality--instrumental-convergence">Motivation theory (orthogonality / instrumental convergence)</a></li><li class="depth-2"><a href="#control-problem-and-system-castes" data-for="control-problem-and-system-castes">Control problem and system castes</a></li><li class="depth-2"><a href="#multipolar-economics-and-social-outcomes" data-for="multipolar-economics-and-social-outcomes">Multipolar economics and social outcomes</a></li><li class="depth-2"><a href="#value-loading-and-indirect-normativity" data-for="value-loading-and-indirect-normativity">Value loading and indirect normativity</a></li><li class="depth-2"><a href="#long-run-technology-strategy" data-for="long-run-technology-strategy">Long-run technology strategy</a></li><li class="depth-2"><a href="#silicon-valley--ai-culture-bridge-thin-optional" data-for="silicon-valley--ai-culture-bridge-thin-optional">Silicon Valley / AI-culture bridge (thin, optional)</a></li><li class="depth-1"><a href="#high-value-passages-to-mine" data-for="high-value-passages-to-mine">High-value passages to mine</a></li><li class="depth-1"><a href="#completeness" data-for="completeness">Completeness</a></li><li class="depth-1"><a href="#sources" data-for="sources">Sources</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../" class="internal">index</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/rajeshb62/united-states-1990-present-wiki">Source Repo</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript.js" type="module" data-persist="true"></script></html>
